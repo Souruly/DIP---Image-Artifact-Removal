@@ -5,9 +5,9 @@ Many a times it happens that undesirable objects creep into our photographs. The
 ![For example](https://lh3.googleusercontent.com/ovlFcTMedNbDg4TN_ja3hECHbhnJGbIGQqi8GYL1y16kkIp1KyeOJ8WjDgt_NBeGE-tOnSIbc3Q76lWG5XqSw8nHG8gpJGqL4BpErEQyKiYCXKuN2OLMfsliFhqf28jhBQ0whYIwdvNpE-EHvRxNSPa7v3ptaecHftu0pSaBaqitUa38VFcvYhHxuHn9A6NxNEO5b6lS518i0uYpbcw6WEPhuw-lizz-uriiY4D48Cw_NicRItzmWftzUzMVbf8kNN7Uj9Kn69K4AdkqI1tx3fjWqYUvNeUL_zvGVdIkAPV69xy8GOLRAmtlQbhulU-qpoYjThKYVF0wys2q21up3J2ytKFEH-i4aeIWqz4txKmdowYHaLS2B_hz_XkDho_yIX814NYkt3Ss8cb-srRFWxhBBTIrPCX9b0h0EYDOzNr2Joj6XPGwUmwqP2f1LIPa9WHQSau-wWgGDg5TdqwtRZHmnOsDDPfqYNhLQaFww2yEKuxEtoON2R1paGyB69IOZOvZyhaOdx0P-bKKsI5jGjafZ9YJjGI_uuXpMAChoPnpoZc74_ckzZWoEOTfxvVgmMQhkEh5P1guZU5XonK0RR_w13Fk0WMIRC7JliCx9Q=w1046-h588-no)
 This photo would be better without the highlighted objects.
 
-<br><br>
+<br>
 This code aims at addressing this issue..
-
+<br><br>
 
 ## How it works : 
 Consider the sample images given to you contain som kind of noise overlaping the true subject: <br>
