@@ -32,7 +32,7 @@ Then, we maintain a simple rule,
 For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics)) method in statistics..
 
 Algorithm : <br>
-**For every pixel location corresponding to each of the images, calculate the mode colour and set the corresponding pixel location of the output image to that coloour.**
+**For every pixel location corresponding to each of the images, calculate the mode colour and set the corresponding pixel location of the output image to that colour.**
 
 ![Example 2](https://lh3.googleusercontent.com/QW-VWHrB_KoeyhFm41RF6nzPPDdOvF8rdb_ZrxLBFgCoqSv603fcCN4K6S4ak_3vfhjNen07MLoAsup10rRUdLH76pAJML_G2BuwO-d2njbHXZLLbtgEwaC6SA8nXvA1xsoVdj0PYo8xFwWtfEKicawOZu9pkTWWNwEnnBkxHtprQlBNinrN88wh87QSY_Mno7KCIwdzzbEbiyKfJ1wWx6aohMj1KczXaRahNOd6nE05HFbrHtabf1Pbx29xRd1KQndVvbf98BOShJQoaqvFfHH6DLqUyyHXZfkdePGMbmjwDXhTDizfzteKRwPQP2pQWo9Z8gIVG5M_tfEXgccTZ8Ne0FdeT81RxvZYEHGMsj0nDbSqhqmQ-t15BNWiVuGG7UlFcUrkM5q5ZkqE9BxMvH4_Ib2FP9Isi2glBIJfeL0r_gDTFl-GkKZpmkj50NJsU2P0xZB5HT6vr0OgKO454OaXY9LPLNNG3INE5qUs9aVcry6UxLIyKEJFjA2FyqPcWPCjJnZJ8eu4UDNbwEUcbkXLyJAxUdNUfrxJ1hghUfuVuD-PRhE1_GNA1xwrDrWb6AGc17P9uF4wFazJyngwTWbLCkLThNHCzOp_vjrGMA=w499-h597-no)
 <br>
@@ -56,7 +56,8 @@ This would generate the `ImageProcess.class` file.
 `java ImageProcess img1.jpg img2.jpg img3.jpg img4.jpg img5.jpg` <br>
 5. The execution may take some time depending on the processing power of the machine and the resolution of the images. Once completed, the output will be saved in the project folder.
 
-**Note :**<br> In an ideal world(Sample Image Set 1) this would work perfectly. This is because the image is not subject to changing environmental conditions to a slightest degree. That what shouldn't change, doesn't change at all. But in the real world, the slightest camera shake, change in focus, exposure, etc changes the value of a pixel. Blue can become Light Blue, Dark Blue, Sky Blue, Teal, Peackock blue, anything. Therefore, we observe that for most pixels the mode value has only one occurence which leads to the object not being removed completely.(examples can be found in Sample Set 2,3). Unless a more lineant/better approach is used in pixel sorting, this can and will happen.
+**Note :**<br> In an ideal world(Sample Image Set 1) this would work perfectly. This is because the image is not subject to changing environmental conditions to a slightest degree. *That* what shouldn't change, *doesn't change at all*. 
+But in the real world, the slightest camera shake, change in focus, exposure, etc. changes the value of a pixel. Blue can become Light Blue, Dark Blue, Sky Blue, Teal, Peackock Blue, anything... Therefore, we observe that for most pixels the 'mode' value has only one occurence which leads to the object not being removed completely.(examples can be found in Sample Set 2,3). Unless a more lineant/better approach is used in pixel sorting, this can and will happen.
 
 
 ## Notes for the future : 
