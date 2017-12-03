@@ -27,12 +27,6 @@ But, as humans, we can easily recognize what belongs to the picture and what doe
 
 We can provide it with a large number of images and it can easily figure out what's changing between frame to frame.
 Then, we maintain a simple rule, 'Look for the things that remain *unchanged* across **most** of the images."<br>
-```
-Roses are red, 
-kinda like that eyesore, 
-Changes are bad, 
-Look the the other four.
-```
 
 For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics)) method in statistics..
 
