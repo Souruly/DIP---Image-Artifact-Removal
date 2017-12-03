@@ -59,3 +59,8 @@ This would generate the `ImageProcess.class` file.
 4. Now run the java program using the command line with arguements. For example <br>
 `java ImageProcess img1.jpg img2.jpg img3.jpg img4.jpg img5.jpg` <br>
 5. The execution may take some time depending on the processing power of the machine and the resolution of the images. Once completed, the output will be saved in the project folder.
+
+
+## Notes for the future : 
+1. Better results could be achieved with a color threshold for processing pixels of real photographs.
+2. Faster algorithms??
