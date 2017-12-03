@@ -26,7 +26,8 @@ In the given sample set, consider **image 1**. The noise appears in the **top le
 But, as humans, we can easily recognize what belongs to the picture and what doesn't. For computers, a pixel, differently colored from it's neighbors might as well be a feature of the object! Unless a special thinking process isn't induced, as a raw input-output machine, computers are really dumb. But what the lack in thinking is made up for by performing harder calculations over largers sets of numbers.
 
 We can provide it with a large number of images and it can easily figure out what's changing between frame to frame.
-Then, we maintain a simple rule, 'Look for the things that remain *unchanged* across **most** of the images."<br>
+Then, we maintain a simple rule, 
+>Look for the things that remain *unchanged* across **most** of the images.<br>
 
 For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics)) method in statistics..
 
