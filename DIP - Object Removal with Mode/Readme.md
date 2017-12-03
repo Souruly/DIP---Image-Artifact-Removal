@@ -10,7 +10,7 @@ This code aims at addressing this issue..
 <br><br>
 
 ## How it works : 
-Consider the sample images given to you contain som kind of noise overlaping the true subject: <br>
+Consider these 4 sample images given to you each containing some kind of noise overlaping the true subject: <br>
 ![Sample Images](https://lh3.googleusercontent.com/62aYsXwYKevWz0Jx8urv-7Gwb84Yb6JThSENN4GZA4pGeSj6EDrfiZDRaQ26jP-anb_4AQlxPMcg12JSCq1g5cAUg_7jVenFWYszjly8YgDyHKnnqDZl3xvmLMrhXME_-5mrmr3MSRo7R9enDYM2OJQWYiiQDSV7zzw9oFcrNFtl1jlM2JLsmvmloHFHvyTFzHyzqhoMfwHsnFPnoQHGSPj_mUKkefJdVatpozMRMuulOdteRWVD2ywpIAUmtG5GCNfFcSRrsfCNvdjNL6WEmSTduoYrAcn1ynp0AwkIroowD-bZDTYI6AKsJuVlpgm5q1loM__N9MUmVEv0dtv5GyiDGIXG6HeSV8MTON2CvvuEKFdPQWkwIC3WmazVAG9bc3UbCdTmd--KJa1E-ulKRzfEcowb1WX5t0MT4Jiil3EDfs__UW6VltrVTEGKaK99Ff86YPrhCqWbZIm6ctYAv-Y3X1pQqTPO9htyfwgshOXaa2ey8FliPytV51WStRuVo5oJJM0EFsQLOAB_2YjVWWThk4jLTzGW2WL3VkknUsoJpWpjSDRWCbJ0UYlxIPuepw_qK1_jn5nPxGIviWweTB1B590T_XTmy3jRAm3nGQ=w400-h100-no)
 <br>
 Red Part : Unwanted subject.<br>
@@ -19,12 +19,20 @@ Green Part : Target subject.
 From these 4 faulty images, we aim to produce one noise free image containing only the true subject: <br>
 ![Target Image](https://lh3.googleusercontent.com/2OdMgWVFtw-kcUDQfjJolr6ppSmgs0XKmxFTVMkrS71XY0EZi5z9OWGGhrIXKZLeZLUX0LKDNwQgs3bI_ShAK1F9Jvos_L5dq1KjFHLZTm7FLaAnrx6kYE8nVb8u-ja1D1Mh1Ht98qMLBBNxRCUAjQw0XX1gnG2hSUBzkNc_kIiYGsaLFlt5b8B_1NC-_Fq2EYKSbm-Zn7U_UhTzmRwWZtwGM00My5M9nd5bC4M4IunJFctwI0HejupRKbrxajjBkpCnZMoCd5q4cFkuz55gTLYyl_-iOTfzsxUiuSQL2CTLFC1rBeDTufuWsRy6-wVifBGWnHgIJV3ko9iYbjmZkgWJhrQKzZIsSBWujgLrDmuWbuQ2eLCLXLMFOz71MNw8sYYnjOkWH3Ti88wzL5iY_5DmrfX4K7kCrpyFt-kUZ_5RupTczh6oeeJcVWD-yjYIsaDQ6hS93uNxsVgWRCL9S0ibKF-FL0wUYcxcU_IwAGqqTTY1g-6ezMVsZ0G0xP6eUjgcFwazCQUbFWIxr0aPtiyeFa6M0_bWdwS2Bp6oVzoK1wWgK-2Hb3ZuqNSv1RCtcK43A1Oftac39W7ka7qZ-XHb_QjM-CXLgOGaGE2Sng=s100-no)
 
-On closer observation of the given sample set,l we can infer that the unwanted subject occupies only finite amount of space from the total real estate(entire image) at a time. If the target moves between image to image and it must, we can single out the part of the image that changes from frame to frame, and remove it.
+On closer observation of the given sample set, we can infer that the unwanted subject occupies only finite amount(25x25 pixels) of space from the total real estate(image res. : 100x100 pixels) at a time. 
 
-In the given sample set, consider image 1. The Noise appears in the top left corner. But we can easily reconstruct the top left corner from the respective areas of the other three images. Similarly, for every contrasting pixel in space that appears because of the undesirable object, there are 3 acceptable pixels corresponding to the same location(coordinates) of the image.
+In the given sample set, consider **image 1**. The noise appears in the **top left corner**. But we can easily reconstruct the top left corner from the respective areas of the other three images. Similarly, **for every contrasting pixel in space that appears because of the undesirable object, there are 3 acceptable pixels corresponding to the same location(coordinates) of the image.**
 
-But, as humans, we can easily recognize what belongs to the picture and what doesn't. For computers, a pixel differently colored froom it's neighbors might as well be a feature of the object. Unless a special thinking process isn't induced, as a raw input-output machine, computers are really dumb. But what the lack in thinking is made up for by performing harder calculations over largers sets of numbers.
+But, as humans, we can easily recognize what belongs to the picture and what doesn't. For computers, a pixel, differently colored from it's neighbors might as well be a feature of the object! Unless a special thinking process isn't induced, as a raw input-output machine, computers are really dumb. But what the lack in thinking is made up for by performing harder calculations over largers sets of numbers.
 
+We can provide it with a large number of images and it can easily figure out what's changing between frame to frame.
+Then we maintain a simple rule, <br>
+```
+Roses are red, 
+kinda like that eyesore, 
+Changes are bad, 
+Look the the other four.
+```
 For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics)) method in statistics..
 
 
