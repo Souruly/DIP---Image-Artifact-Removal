@@ -60,3 +60,4 @@ This would generate the `ImageProcess.class` file.
 ## Notes for the future : 
 1. Better results could be achieved with a color threshold for processing pixels of real photographs.
 2. Faster algorithms??
+3. I've already seen what iseing "Average"(Mean) instead of Mode does. But it would be interesting to see what "Median" does.
