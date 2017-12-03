@@ -26,13 +26,8 @@ In the given sample set, consider **image 1**. The noise appears in the **top le
 But, as humans, we can easily recognize what belongs to the picture and what doesn't. For computers, a pixel, differently colored from it's neighbors might as well be a feature of the object! Unless a special thinking process isn't induced, as a raw input-output machine, computers are really dumb. But what the lack in thinking is made up for by performing harder calculations over largers sets of numbers.
 
 We can provide it with a large number of images and it can easily figure out what's changing between frame to frame.
-Then, we maintain a simple rule, 'Look for the things that remain *unchanged* across **most** of the images."<br>
-```
-Roses are red, 
-kinda like that eyesore, 
-Changes are bad, 
-Look the the other four.
-```
+Then, we maintain a simple rule, 
+>Look for the things that remain *unchanged* across **most** of the images.<br>
 
 For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics)) method in statistics..
 
@@ -40,6 +35,7 @@ Algorithm : <br>
 **For every pixel location corresponding to each of the images, calculate the mode colour and set the corresponding pixel location of the output image to that coloour.**
 
 ![Example 2](https://lh3.googleusercontent.com/QW-VWHrB_KoeyhFm41RF6nzPPDdOvF8rdb_ZrxLBFgCoqSv603fcCN4K6S4ak_3vfhjNen07MLoAsup10rRUdLH76pAJML_G2BuwO-d2njbHXZLLbtgEwaC6SA8nXvA1xsoVdj0PYo8xFwWtfEKicawOZu9pkTWWNwEnnBkxHtprQlBNinrN88wh87QSY_Mno7KCIwdzzbEbiyKfJ1wWx6aohMj1KczXaRahNOd6nE05HFbrHtabf1Pbx29xRd1KQndVvbf98BOShJQoaqvFfHH6DLqUyyHXZfkdePGMbmjwDXhTDizfzteKRwPQP2pQWo9Z8gIVG5M_tfEXgccTZ8Ne0FdeT81RxvZYEHGMsj0nDbSqhqmQ-t15BNWiVuGG7UlFcUrkM5q5ZkqE9BxMvH4_Ib2FP9Isi2glBIJfeL0r_gDTFl-GkKZpmkj50NJsU2P0xZB5HT6vr0OgKO454OaXY9LPLNNG3INE5qUs9aVcry6UxLIyKEJFjA2FyqPcWPCjJnZJ8eu4UDNbwEUcbkXLyJAxUdNUfrxJ1hghUfuVuD-PRhE1_GNA1xwrDrWb6AGc17P9uF4wFazJyngwTWbLCkLThNHCzOp_vjrGMA=w499-h597-no)
+<br>
 Here, the running man is an unwanted object which changes across the 5 images. On running the program with the 5 images as input, the target image should be generated.
 
 
@@ -64,3 +60,4 @@ This would generate the `ImageProcess.class` file.
 ## Notes for the future : 
 1. Better results could be achieved with a color threshold for processing pixels of real photographs.
 2. Faster algorithms??
+3. I've already seen what using "Average"(Mean) instead of Mode does. But it would be interesting to see what "Median" does.
