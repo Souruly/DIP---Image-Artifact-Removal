@@ -59,7 +59,7 @@ This would generate the `ImageProcess.class` file.
 **Note :**<br> In an ideal world(Sample Image Set 1) this would work perfectly. This is because the image is not subject to changing environmental conditions to a slightest degree. *That* what shouldn't change, *doesn't change at all*. 
 But in the real world, the slightest camera shake, change in focus, exposure, etc. changes the value of a pixel. Blue can become Light Blue, Dark Blue, Sky Blue, Teal, Peackock Blue, anything... Therefore, we observe that for most pixels the 'mode' value has only one occurence which leads to the object not being removed completely.(examples can be found in Sample Set 2,3). Unless a more lineant/better approach is used in pixel sorting, this can and will happen.
 
-##Update Log : <br>
+## Update Log : 
 **5th December 2017**<br>
 I kinda implemented the thresholding feature that I talked about in the 'Notes for the Future' part. So as expected, it works, but not as I wanted to..I think the problem is with the thresholding algorithm. I found that in a given lower and upper bound of numbers, you can limit the gamut by converting the int to an int typecasted float and back to int. <br>
 For example : Consider a list
