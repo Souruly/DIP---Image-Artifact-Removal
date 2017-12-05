@@ -62,9 +62,8 @@ But in the real world, the slightest camera shake, change in focus, exposure, et
 ##Update Log : <br>
 **5th December 2017**<br>
 I kinda implemented the thresholding feature that I talked about in the 'Notes for the Future' part. So as expected, it works, but not as I wanted to..I think the problem is with the thresholding algorithm. I found that in a given lower and upper bound of numbers, you can limit the gamut by converting the int to an int typecasted float and back to int. <br>
-For example : Consider a list <br>
+For example : Consider a list
 > 10 154 238 240 242
-<br>
 Now if we apply a threshold of ±5, the last three numbers are basically the same.
 If we divide each number by 5 to convert it to float, we get
 >2.0 30.8 47.6 48.0 48.4
