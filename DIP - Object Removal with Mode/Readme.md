@@ -2,7 +2,7 @@
 
 Many a times it happens that undesirable objects creep into our photographs. They may partially or completely overlap our main subject or just become an eye-sore in the frame..
 
-![For example](Images for Readme/20160617_190029.jpg)
+![For example](https://github.com/Souruly/Java-Projects/blob/master/DIP%20-%20Object%20Removal%20with%20Mode/Images%20for%20Readme/20160617_190029.jpg?raw=true)
 This photo would be better without the highlighted objects.
 
 <br>
@@ -11,13 +11,13 @@ This code aims at addressing this issue..
 
 ## How it works : 
 Consider these 4 sample images given to you each containing some kind of noise overlaping the true subject: <br>
-![Sample Images](https://lh3.googleusercontent.com/zbMqu5sKNk7xQqXc1eMw_7g6c_dBP3wrXXfZRrcSMs7jlnkw_YjJ2Da66PXp3jZAKz3DhcGUf_qi2sU7PUFFV73QgEI8U1Ef6iTn2u2X-9E0SLcqDhic4VZteCO16TakL8oXCIGvyLU5Irhzh5pO90nqKTfhdZYTvAqcJy31rx1aKi2fL5LcLulDSioMWaHaVndxDtnJPwgScJRBHdUq_cjaZ_rw2eGKatOW5_vdgNiPS4ThWoJNsxrH1aADzCWnW8xqe2pi4qpx2byJ6f_31Slk_1sAb5Dl567bxBixa3zPjmYtX6VQKgosv5OnO5IdoWBg8RDMOVBVfdqT7Du-v9Qqq7N5YMy2BrHo82QIUippkXusKuzjcbbY_kLdDB2ZTjvXiZk4QFVA7lVhheVOKsls10UQfFX4c5xM5-6dKslLAnRLx497Qkbj_Hawb7uNlWKwKiuqh5pt_s8Z6sAGkGwCf039CgUlezZmVqKqloJi9aWnzro7wSOvK1r2dZwcttfXeEtw1ji7ERuQ1qJbUzPkYblM11oInY2oydQr10aCNpI1HMwY5NyFHhrDGDvZhC21RVA_V2MmWevXtdpVAipiTyCVkhSjgN12Q6Y5wg=w400-h120-no)
+![Sample Images](https://github.com/Souruly/Java-Projects/blob/master/DIP%20-%20Object%20Removal%20with%20Mode/Images%20for%20Readme/Untitled2.png?raw=true)
 <br>
 Red Part : Unwanted subject.<br>
 Green Part : Target subject.
 
 From these 4 faulty images, we aim to produce one noise free image containing only the true subject: <br>
-![Target Image](https://lh3.googleusercontent.com/2OdMgWVFtw-kcUDQfjJolr6ppSmgs0XKmxFTVMkrS71XY0EZi5z9OWGGhrIXKZLeZLUX0LKDNwQgs3bI_ShAK1F9Jvos_L5dq1KjFHLZTm7FLaAnrx6kYE8nVb8u-ja1D1Mh1Ht98qMLBBNxRCUAjQw0XX1gnG2hSUBzkNc_kIiYGsaLFlt5b8B_1NC-_Fq2EYKSbm-Zn7U_UhTzmRwWZtwGM00My5M9nd5bC4M4IunJFctwI0HejupRKbrxajjBkpCnZMoCd5q4cFkuz55gTLYyl_-iOTfzsxUiuSQL2CTLFC1rBeDTufuWsRy6-wVifBGWnHgIJV3ko9iYbjmZkgWJhrQKzZIsSBWujgLrDmuWbuQ2eLCLXLMFOz71MNw8sYYnjOkWH3Ti88wzL5iY_5DmrfX4K7kCrpyFt-kUZ_5RupTczh6oeeJcVWD-yjYIsaDQ6hS93uNxsVgWRCL9S0ibKF-FL0wUYcxcU_IwAGqqTTY1g-6ezMVsZ0G0xP6eUjgcFwazCQUbFWIxr0aPtiyeFa6M0_bWdwS2Bp6oVzoK1wWgK-2Hb3ZuqNSv1RCtcK43A1Oftac39W7ka7qZ-XHb_QjM-CXLgOGaGE2Sng=s100-no)
+![Target Image](https://github.com/Souruly/Java-Projects/blob/master/DIP%20-%20Object%20Removal%20with%20Mode/Images%20for%20Readme/Untitled3.png?raw=true)
 
 On closer observation of the given sample set, we can infer that the unwanted subject occupies only finite amount(25x25 pixels) of space from the total real estate(image res. : 100x100 pixels) at a time. 
 
@@ -34,7 +34,7 @@ For this, we can use the [Mode](https://en.wikipedia.org/wiki/Mode_(statistics))
 Algorithm : <br>
 **For every pixel location corresponding to each of the images, calculate the mode colour and set the corresponding pixel location of the output image to that colour.**
 
-![Example 2](https://lh3.googleusercontent.com/QW-VWHrB_KoeyhFm41RF6nzPPDdOvF8rdb_ZrxLBFgCoqSv603fcCN4K6S4ak_3vfhjNen07MLoAsup10rRUdLH76pAJML_G2BuwO-d2njbHXZLLbtgEwaC6SA8nXvA1xsoVdj0PYo8xFwWtfEKicawOZu9pkTWWNwEnnBkxHtprQlBNinrN88wh87QSY_Mno7KCIwdzzbEbiyKfJ1wWx6aohMj1KczXaRahNOd6nE05HFbrHtabf1Pbx29xRd1KQndVvbf98BOShJQoaqvFfHH6DLqUyyHXZfkdePGMbmjwDXhTDizfzteKRwPQP2pQWo9Z8gIVG5M_tfEXgccTZ8Ne0FdeT81RxvZYEHGMsj0nDbSqhqmQ-t15BNWiVuGG7UlFcUrkM5q5ZkqE9BxMvH4_Ib2FP9Isi2glBIJfeL0r_gDTFl-GkKZpmkj50NJsU2P0xZB5HT6vr0OgKO454OaXY9LPLNNG3INE5qUs9aVcry6UxLIyKEJFjA2FyqPcWPCjJnZJ8eu4UDNbwEUcbkXLyJAxUdNUfrxJ1hghUfuVuD-PRhE1_GNA1xwrDrWb6AGc17P9uF4wFazJyngwTWbLCkLThNHCzOp_vjrGMA=w499-h597-no)
+![Example 2](https://github.com/Souruly/Java-Projects/blob/master/DIP%20-%20Object%20Removal%20with%20Mode/Images%20for%20Readme/Untitled1.png?raw=true)
 <br>
 Here, the running man is an unwanted object which changes across the 5 images. On running the program with the 5 images as input, the target image should be generated.
 
@@ -61,6 +61,7 @@ But in the real world, the slightest camera shake, change in focus, exposure, et
 
 ## Update Log : 
 **5th December 2017**<br>
+![Thresholding](https://github.com/Souruly/Java-Projects/blob/master/DIP%20-%20Object%20Removal%20with%20Mode/Images%20for%20Readme/Compare.jpg?raw=true)
 I kinda implemented the thresholding feature that I talked about in the 'Notes for the Future' part. So as expected, it works, but not as I wanted to..I think the problem is with the thresholding algorithm. I found that in a given lower and upper bound of numbers, you can limit the gamut by converting the int to an int typecasted float and back to int. <br>
 For example : Consider a list
 
