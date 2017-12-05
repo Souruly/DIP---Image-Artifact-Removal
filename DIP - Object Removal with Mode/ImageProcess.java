@@ -53,6 +53,8 @@ public class ImageProcess
             int blue = (int)(c.getBlue());
             b += blue;
             col[k] = (red+green+blue)/3;
+            col[k] /= 5;
+            col[k] *= 5;
           }
 
           int newCol = mode(col);
