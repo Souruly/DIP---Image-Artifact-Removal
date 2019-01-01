@@ -1,3 +1,8 @@
+# Important Update : 
+The algorithms and methods mentioned in this readme and the repository have been published as a research paper!! [Link](http://ictactjournals.in/ArticleDetails.aspx?id=3648).
+The entire code used in the paper will be available for free in the folder "Complete Code". This readme was made a long tme ago. Some of the algorithms discussed further in the readme have been used as it is in the paper. Some of them may have been modified in the final code.(Also, things like how the code should be downloaded, used, etc won't exactly work as mentioned here, but you will figure it out) Therefore, this readme would not be the best supplementary documentation to the code. However, I will not change/have not changed anything below this point as it still acts as a good explaination of ow the code works. Thanks!
+
+
 # DIP : Unwanted Object Removal
 
 Many a times it happens that undesirable objects creep into our photographs. They may partially or completely overlap our main subject or just become an eye-sore in the frame..
